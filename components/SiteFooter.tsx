@@ -1,7 +1,7 @@
 import { Container, Dot } from "./ui";
 
 /** Change to the client's real contact address. */
-const CONTACT_HREF = "mailto:hello@example.com";
+const CONTACT_HREF = "mailto:hello@cleanbathroomlabs.com";
 
 export function SiteFooter() {
   return (

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Container, Eyebrow, h2Class } from "./ui";
 
 /** Put the product video link here (YouTube, Vimeo, or /video.mp4 in /public) to make the Play button work. */
-const VIDEO_URL = "";
+const VIDEO_URL = "https://vimeo.com/1237121529";
 
 const steps = [
   { img: "/images/step-1.webp", title: "Clip it on", text: "Lift CBL-1 from its stand and set it on the toilet rim." },

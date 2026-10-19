@@ -6,10 +6,10 @@ import { cx } from "./ui";
 type Status = "idle" | "loading" | "error" | "success";
 
 /**
- * Where emails are sent. Set NEXT_PUBLIC_WAITLIST_ENDPOINT (e.g. a Formspree / Mailchimp / Google Apps Script URL)
- * in Vercel → Settings → Environment Variables. Without it the form only validates and shows the success message.
+ * Waitlist emails go to Formspree. Can be overridden with NEXT_PUBLIC_WAITLIST_ENDPOINT in Vercel → Settings →
+ * Environment Variables.
  */
-const ENDPOINT = process.env.NEXT_PUBLIC_WAITLIST_ENDPOINT;
+const ENDPOINT = process.env.NEXT_PUBLIC_WAITLIST_ENDPOINT || "https://formspree.io/f/mvkzylpr";
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
